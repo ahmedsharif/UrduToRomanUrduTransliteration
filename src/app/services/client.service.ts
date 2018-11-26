@@ -39,9 +39,7 @@ export class ClientService {
         ({ id: c.payload.val, 
         NewsId:  c.payload.val}))
     });
-    return this.myData.valueChanges()
-    console.log("this.nes", this.myData.valueChanges());
-    console.log("this.news", this.news);
+    return this.myData.valueChanges();
   }
 
   getClients(): Observable<Client[]> {

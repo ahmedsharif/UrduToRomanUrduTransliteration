@@ -25,11 +25,10 @@
   </tbody>
 </table>
 <ul>
-  <li *ngFor="let book of books | async">
-      <pre>{{ book | json }}</pre>
+  <li *ngFor="let news of myNews | async">
+     {{ news | json }}
   </li>
 </ul>
-
 <ng-template #noClients>
   <hr>
   <h5>There are no clients in the system</h5>
